@@ -5,4 +5,4 @@
 
 ### HAPPY CODE | HAPPY MONEY | HAPPY LIFE
 
-#### © 2022 Bản quyền thuộc về giáo.làng | fb/giao.lang.bis | youtube.com/c/giáolàng
+### link youtube tham khảo: https://www.youtube.com/watch?v=2Wd-KZ8SRaQ&list=PLayYhLZuuO9tGCYiHiKzVp4ueFb96s764&index=5
