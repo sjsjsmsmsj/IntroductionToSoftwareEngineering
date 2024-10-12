@@ -1,0 +1,236 @@
+ĐỀ THI THỰC HÀNH MÔN SWE201c - SWE: INTRODUCTION TO SOFTWARE ENGINEERING
+BỐI CẢNH NHƯ 1 CÂU CHUYỆN LÀM APP NGOÀI ĐỜI (LÀM APP NGOÀI ĐỜI THÌ SẼ CÓ CHUYỆN HƠN)
+
+LÀM APP NGOÀI ĐỜI - CHUYỆN TIÊU BIỂU - SÓNG BẮT ĐẦU TỪ GIÓ - VIẾT APP TỪ AI ĐÓ ĐẶT HÀNG
+
+CTY CHUYÊN LÀM APP                                 CHO AI ĐÓ ĐẶT HÀNG (CUSTOMER) 
+FSOFT                                              Bệnh viện, nhà hàng, khách sạn, quán ăn
+LARION, ELCA                                       Cty du lịch, nhà máy, xí nghiệp, trường 
+VINAGAME               <-- yêu cầu, $              học, ngân hàng, shop...
+NASH TECH                  mong đợi                Cần app để giúp cho công việc của họ
+SAIGON TECHNOLOGY      app/soft -->
+NET COMPANY         chức năng, tính năng
+TMA
+... 
+
+Dev team                BA                         Customer - trả tiền để có app
+Development team        Business Analyst           User - người xài app                
+                 Chuyên viên đi (gặp) khách (hàng)
+                        BrSE (Bridge Software Engineer) 
+                        Kĩ sư cầu nối
+                        PO - Product Owner
+-----------------------------------------------------
+ĐỀ THI PE - PRACTICAL EXAM
+I. Đề thi cho 1 câu chuyện, 1 bối cảnh là 1 vị khách hàng nào đó (customer, cty, nhà hàng...)
+muốn có 1 cái app phục vụ cho công việc vận hành doanh nghiệp, tổ chức của họ
+(quản lí k/s, quản lí nhà hàng, quản lí k/h, quản lí kho, quản lí công nợ, quản lí shop, ...)
+   Đề thi có nói về cách doanh nghiệp đang vận hành, mong ước của chủ (gã trả tiền để làm 
+   app)
+II. CÂU HỎI CẦN TRẢ LỜI - BẠN TRẢ LỜI Ở GÓC NHÌN/ROLE LÀ DEV TEAM, LÀ GÃ BA
+
+1. VỚI YÊU CẦU CỦA K/H VỀ CÁI APP SẼ DỰ ĐỊNH LÀM (6 THÁNG) THÌ BẠN SẼ CHỌN PHƯƠNG PHÁP LÀM APP NHƯ THẾ NÀO (SOFTWARE DEVELOPEMENT PROCESS - WATERFALL, AGILE,...)
+GIẢI THÍCH TẠI SAO CHỌN
+
+2. NHẬN DIỆN CÁC CHỨC NĂNG CỦA APP SẼ LÀM, ĐẶC ĐIỂM CỦA APP SẼ LÀM
+                 FUNCTIONAL REQUIREMENTS, NON-FUNCTIONAL REQUIREMENTS
+                 ~ USER STORY
+                 (nôm na: tìm tên các màn hình/page/form mà app sẽ có cho k/h)
+
+3. ĐỀ XUẤT LỘ TRÌNH/KẾ HOẠCH RELEASE TÍNH NĂNG - LỘ TRÌNH ĐƯA RA TÍNH NĂNG/CODE CÁC MÀN HÌNH - USER STORY MAPPING
+
+4. ĐỀ XUẤT CÁC HÌNH THỨC KIỂM THỬ CHẤT LƯỢNG PHẦN MỀM - SOFTWARE TESTING
+
+==========================================================
+MỘT TÌNH HUỐNG ĐỀ THI - MỘT VÍ DỤ VỀ ĐỀ THI
+I.
+- Trường 3 chữ (F) - Phòng CTSV muốn tăng cường trải nghiệm của sinh viên về các dịch vụ mà trường cung cấp; trường muốn là cái app nho nhỏ để giúp sv trường trao đổi, mua bán đồ cũ (đàn, sáo, võ phục, máy,...)
+- App cho các sinh viên trường post các món đồ muốn bán (trao đổi), giá tiền, thông tin liên hệ...
+- App cho các sinh viên xem các món đồ, chat, liên hệ, book mua (order, cart)
+- Trường hỗ trợ nhân viên/sv ở quầy (hub) nhận giao các món đồ 
+- Trường muốn app này là: Mobile, Web, English/Vietnam
+
+II. QUESTIONS
+1. Chọn phương pháp làm app, quy trình làm app (Waterfall, V-model, Sashimi, RUP, Agile (Scrum, XP, Kanban, Lean start-up...)), và giải thích lí do chọn!!! ~ 3 điểm
+2. Liệt kê các functional reqs, non-functional reqs (8 cái đổ lại) 2 - 2.5 điểm
+3. Liệt kê các user story (5 cái đổ lại) 2 điểm 
+
+4. Vẽ lộ trình release sản phẩm, lộ trình/kế hoạch implement các tính năng/viết code làm cái tính năng)
+   User story mapping (~2 điểm)
+5. Đề xuất cách thức kiểm thử app - Software Testing) (~1.5 điểm)
+============================================================ 
+1. CHỌN PHƯƠNG PHÁP LÀM APP SKY-MARKET
+DỰA TRÊN 3 YẾU TỐ DƯỚI ĐÂY + GIẢ ĐỊNH CỦA RIÊNG BẠN CHO CÂU CHUYỆN KHÁCH HÀNG - CTY PHẦN MỀM (ASSUMPTION)
+ĐỂ CHỌN QUY TRÌNH PHÙ HỢP
+
+* REQUIREMENTS CHARACTERISTICS 
+- Requirements rõ, khách hàng phát biểu đc bài toán, mô tả bài toán rõ, yêu cầu ít thay đổi
+  > Waterfall prefered!!! 
+- Bài toán mới với chính khách hàng luôn (cty mới thành lập, Excel) -> cần feedback từ k/h cực nhiều   
+  cho mỗi thứ dev team làm -> Agile prefered!!!   
+
+* DEVELOPMENT TEAM
+- Reqs team có quen hok, đã từng làm dạng bài/app này chưa, rồi -> Watefall recommendation!
+- Reqs team lạ, chưa từng, khai phá mảng mới, nhánh mới -> Agile prefered!
+- Tech: nếu muốn app dụng tech lạ, mà có thời gian, thì: Agile  
+
+* USER INVOVEMENT:
+- Khách hàng dành thời gian cho mình nhiều cỡ nào: nhiều - Agile 
+                                                   ko thường xuyên - Watefall 
+
+ÁP DỤNG VÀO BÀI SKY-MARKET:
+- App mới, phòng CTSV chưa làm bao giờ
+- Họ có thời gian để hợp tác với dev team
+- Reqs mình/dev team cũng chưa làm/gặp
+  >>>>> AGILE: SCRUM 
+ 
+GIẢI THÍCH 3 GÓC NHÌN THEO ĐÚNG NỘI DUNG BÀI, KO ĐI VÀO COPY/PASTE KHÁI NIỆM VỀ AGILE, WATERFALL TRÊN MẠNG -> 0 ĐIỂM
+=========================
+CÂU 2-3 - FUNCTIONAL, NON-FUNCTIONAL REQS, USER STORIES
+1. APP VIẾT CHO AI DÙNG???
+- Student (trường 3 chữ)
+- Student Service Staff (SSS)
+- Admin??? 
+
+2. WHAT/WHY/TÊN CÁC MÀN HÌNH, TRẢI NGHIỆM 
+
+BÀI TẬP VỀ NHÀ: LIỆT KÊ SẴN 1 LOẠT CÁC FUNCTIONAL REQS, NON-FUNCTIONAL REQS, USER STORY 
+
+TỐI MAI LIVE TIẾP!!!!!!!!!!!!!!!!!!
+---------------------
+1. NON-FUNCTIONAL REQS (ADJ-TÍNH TỪ)
+- App supports multiple browsers, e.g. Chrome, CocCoc, Firfox...
+- App supports dual-language: EN, VI
+- Màu cam, màu hường...
+- ...
+2. FUNCTIONAL REQS - USER STORIES (VERB/WHAT/WHY/WHO/TARGET/GOAL/PURPOSE/ TÊN MÀN HÌNH GIÚP LƯU TRỮ-XỬ LÍ)
+
+(sinh viên làm bài copy vô cảm, ko thèm sửa chữa, ChatGPT, nhờ thi giùm, ko thèm quan tâm ngữ cảnh bài toán)
+
+- App supports the login/sign-in process by using FB!!! SAI VÌ LÀM SAO XÁC NHẬN ĐC ĐÓ LÀ SV TRƯỜNG 
+- App supports the login/sign-in process by using school email (@fpt.edu.vn) -> ĐÚNG
+
+* App QLNS của 1 cty XYZ
+- App allows guest to register an account!!! -> SAI 
+
+- As an admin/ a human-resource staff, I want to create a new employee profile (and account included) 
+
+* BÀI SKY MARKET
+- Login (no register) by using school email
+- View a specific item (who ai xài??? ko cần login, ai cũng xài đc: guest, visitor
+- View the list of available items
+- Search available items by keyword, tag, category
+- Filter...
+- Post a new (old) item...
+- Create a new category...
+>>>>> USER STORY: as a... i want to... so that..
+- AS A GUEST, I WANT TO VIEW A SPECIFIC OLD ITEM IN DETAILS SO THAT I CAN DECIDE TO BUY IT OR NOT???
+                                                                    I COULD KNOW IF IT IS A DESIRED ONE!!!
+  
+DONE CÂU 2_3
+
+==========================================
+CÂU 4 - USER STORY MAPPING - DÍNH DÁNG ĐẾN USER STORY Ở TRÊN, USER STORY ~ FUNCTIONAL REQS ~ VERB -> GOAL
+NHỮNG MÀN HÌNH MÀ USER SẼ TRẢI NGHIỆM/DÙNG CHO CÔNG VIỆC MỤC ĐÍCH NÀO ĐÓ
+
+BÀI THI YÊU CẦU: CHỈ CHỌN 1 VÀI GOAL/MỤC TIÊU ỨNG VỚI USERS NÀO ĐÓ, TRIỂN KHAI CHI TIẾT NGANG -> STEPS/FLOW
+                                                                               CHI TIẾT DỌC   -> USER STORY
+
+KO YÊU CẦU LÀM TOÀN BỘ BÀI!!!
+
+
+CẤU TRÚC CHUNG CỦA USM
+
+USER? 
+
+GOAL/EPIC/JOURNEY 1     OAL/EPIC/JOURNEY 2             CỤM TÍNH NĂNG CHÍNH CỦA APP/TRẢI NGHIỆM CHÍNH    BUY OLD ITEMS           
+
+FLOW/STEPS/BACKBONE     CÁC LUỒNG HÀNH ĐỘNG ĐỂ ĐẠT ĐC 1 GOAL THEO TIME                                  Signup/in -> Add cart -> Order
+
+MVP                     CÁC USER STORY KHÁC NHAU  
+RELEASE
+(ĐỢT RELEASE SẢN PHẨM   VIẾT THEO CHIỀU DỌC
+TỐN THỜI GIAN ĐỂ CODE   ỨNG VỚI CÁC STEP
+                        Ở TRÊN
+                        NHÓM MÀN HÌNH LIÊN QUAN
+                        CÙNG LOẠI, CÙNG NHÓM
+                        BỔ TRỢ CHO TỪNG STEP CỦA HÀNH TRÒNH Ở BACKBONE
+
+
+===================================
+CÂU 5: ĐỀ XUẤT CÁC PHƯƠNG ÁN, CÁCH THỨC, KĨ THUẬT KIỂM THỬ CÁI APP SKY MARKET
+
+1. App sử dụng phương pháp phát triển phần mềm Agile/Scrum trong đó có Product Backlog, User Story Mapping, ... 
+   ... > kiểm thử đám này khi chưa có app -> STATIC TESTING 
+
+2. Theo tiến trình viết code làm app thì ta có các mức độ hoàn thiện app khác nhau, code nhiều dần lên
+   có code (có app) tức là có thể RUN TRÊN MÁY ĐC ÒI, TEST KHI CÓ APP/CODE RUN, NGHE ĐỘNG ĐẬY, 
+   ĐƯA CODE ĐÂY, APP ĐÂY, TUI CHẠY, TUI TEST XEM ỔN KHÔNG, DYNAMIC TESTING TECHNIQUE
+
+3. WHEN - DYNAMIC 
+- Kiểm thử khi bắt đầu viết code: hàm/function/class:  - THEO THỜI ĐIỂM CODE VỪA CÓ, ÍT ÍT
+
+    - hàm tính total cho bill                            >>>>> UNIT TESTING LEVEL
+    - hàm login()  y = f(x)                                   KIỂM THỬ ĐƠN VỊ
+    - hàm logout() 
+    - hàm createItem()
+    - hàm createCategory()
+     
+
+WHEN CODE NHIỀU - DYNAMIC Kiểm thử khi bắt đầu có đc chức năng (UI/màn hình) functionality/functional req - user
+                                              - THEO THỜI ĐIỂM CODE CÓ NHIỀU HƠN, CÓ CÁC PAGE/FEATURE/
+  - LOGIN                                                    FUNCTIONALITY
+  - SEARCH                                      GÓC NHÌN USER NGƯỜI DÙNG
+  - FILTER                                                       INTEGRATION TESTING LEVEL
+  - CHAT                                                        KIỂM THỬ TÍCH HỢP
+  - GIỎ HÀNG
+  - BILL/ORDER
+  - PROFILE
+  - FEEDBACK
+  - CAROUSEL 
+  - SALES/SẢN PHẨM 0Đ
+
+ FEATURE: TA LẠI CÓ MỤC TIÊU ĐỂ TEST, Ý ĐỊNH TEST TRÊN MỖI FEATURE LÀ GÌ??? 
+          GÓC NHÌN WHAT, ĐO GÌ???
+             - CHẠY ĐÚNG HAY SAI -> FUNCTIONAL TESTING TYPE
+             - UI/UX NGON HAY DỞ -> NON-FUNCTIONAL TESTING TYPE
+             - CHẠY NHANH HAY CHẬM -> NON-FUNCTIONAL TESTING TYPE, PERFORMANCE TESTING TYPE
+             
+                
+
+- Kiểm thử khi toàn bộ các chức năng đã viết (RẤT NHIỀU MÀN HÌNH Ô NHẬP NÚT NHẤN + CODE + DATABASE) 
+                                           APP NGON RỒI, HOÀN THIỆN RỒI, GÓC NHÌN NHÀ DEV HOY
+                                                               
+
+  - LOGIN                                                   
+  - SEARCH                                      GÓC NHÌN USER NGƯỜI DÙNG SYSTEM TESTING LEVEL 
+  - FILTER                                                              KIỂM THỬ HỆ THỐNG 
+  - CHAT
+  - GIỎ HÀNG
+  - BILL/ORDER
+  - PROFILE
+  - FEEDBACK
+  - CAROUSEL 
+  - SALES/SẢN PHẨM 0Đ  
+  - CRUD - CREATE, RETRIEVE/READ, UPDATE, DELETE X GÌ
+  - CRUD - CREATE, RETRIEVE/READ, UPDATE, DELETE X GÌ 
+            MỤC TIÊU TEST GÌ: CHỨC NĂNG CHẠY ĐÚNG SAI, NHANH CHẬM
+                     FUNCTIONAL TESTING TYPE, NON-FUNCTIONAL TESTING TYPE            
+
+
+DEV GÁY: NGON!!! NGON VỚI DEV HOY, CÒN KHÁCH HÀNG XÁC NHẬN NỮA CHI!!!  UAT LEVEL
+                                                    USER ACCEPTANCE TESTING LEVEL - KIỂM THỬ CHẤP NHẬN
+                                   
+                         MỤC TIÊU TEST GÌ: CHỨC NĂNG CHẠY ĐÚNG SAI, NHANH CHẬM
+                         FUNCTIONAL TESTING TYPE, NON-FUNCTIONAL TESTING TYPE            
+
+
+
+3 LEVEL INTEGRATION, SYSTEM, UAT CÓ 2 CÁCH TEST NHỎ HƠN ĐỂ KIỂM TRA CHỨC NĂNG/PHI CHỨC NĂNG
+                - DÙNG SỨC CHẠY APP, MẮT NHÌN, TAY CLICK, TAY NHẬP... -> MANUAL TESTING
+                - DÙNG CODE CHẠY APP NHƯ MA NHẬP                  ... -> AUTOMATION TESTING
+  
+
+
+
+
+
